@@ -1,4 +1,4 @@
-# About TimeTracker 5280 <a
+# About TimeTracker 5280
 > The TimeTracker 5280 is a CLI that allows users to track the amount of time they have spent working on different tasks throughout the day. Though there are other solutions for time tracking, this provides a quick (and dirty) local interface that requires minimal interaction and thereby increases efficiency.
 
 ## Table of Contents
