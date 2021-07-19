@@ -1,17 +1,26 @@
-# About TimeTracker 5280
+# About TimeTracker 5280 <a
 > The TimeTracker 5280 is a CLI that allows users to track the amount of time they have spent working on different tasks throughout the day. Though there are other solutions for time tracking, this provides a quick (and dirty) local interface that requires minimal interaction and thereby increases efficiency.
 
 ## Table of Contents
-* [About](#general-information)
-* [Technologies Used](#technologies-used)
+* [About](#about-timetracker-5280)
 * [Setup](#setup)
 * [Usage](#usage)
 
-## Technologies Used
 
 ## Setup
 ### Install File(s)
 There really is only one file that needs to be installed to run this system (time-tracker.py). However, I recommend you download the README to use as reference. Additionally, I recommend downloading the files to their own, dedicated folder so as to minimize the chance of messing up the alias (created in the next step).
+
+### Install requirements
+Make sure you install the following libraries:
+* argparse==1.4.0
+* datetime==4.3
+* pathlib==1.0.1
+* pandas==1.1.3
+OR<br>
+You can run `pip install -r requirements.txt`)
+
+
 
 ### Create a Command Line Alias
 #### MAC (zsh)
