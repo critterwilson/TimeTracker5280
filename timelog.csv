@@ -1,6 +1,6 @@
 Start Time,End Time,Open/Closed,Task,Duration
-2021-07-19 09:30:00,2021-07-19 12:14:00,Closed,Goodway Group,2.75
-2021-07-19 12:15:00,,Open,TimeTracker,
-2021-07-19 12:51:00,,Open,test,
-2021-07-19 01:30:00,,Open,test,
-2021-07-19 14:38:00,,Open,task,
+2021-07-19 09:30:00,2021-07-19 11:30:00,Closed,Goodway Group,2.0
+2021-07-19 12:15:00,2021-07-19 15:24:00,Closed,TimeTracker,3.25
+2021-07-19 09:00:00,2021-07-19 09:30:00,Closed,Emails/Organizing Week,0.5
+2021-07-19 11:30:00,2021-07-19 12:15:00,Closed,SQL Challenges,0.75
+2021-07-19 15:30:00,,Open,Reviewing SQL training,
