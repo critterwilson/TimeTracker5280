@@ -241,8 +241,9 @@ def handle_arguments():
 	parser.add_argument('action', help='[Start]/[stop] a task\n' +
 		'[clear] all previous records\n' +
 		'[show] all records\n' +
-		'[delete] a single record\n',
-		choices=('start', 'open', 'stop', 'close', 'clear', 'show', 'delete', 'edit', 'sum'))
+		'[delete] a single record\n' +
+		'[sort] the records by start time\n', 
+		choices=('start', 'open', 'stop', 'close', 'clear', 'show', 'delete', 'edit', 'sum', 'sort'))
 	# specify a date
 	parser.add_argument('--date', '-d', action='store',
 		help='Specify a time in the format mm-dd-yyyy')
@@ -260,11 +261,16 @@ def handle_arguments():
 	# return the args as a dictionary
 	return {'action':args.action, 'date':args.date, 'time':args.time, 'name':args.name, 'index':args.index}
 
+def sort_records(df):
+	# sort our dataframe
+	df.sort_values(by='Start Time', inplace=True)
+	# overwrite the "db"
+	df.to_csv(Path.home() / 'TimeTracker/timelog.csv', index=False)
+
 def main():
 	'''Main driver'''
 	# initialize a blank dataframe
 	df = pd.DataFrame(columns = ['Start Time', 'End Time', 'Open/Closed', 'Task', 'Duration'])
-
 	# handle arguments
 	try:
 		args = handle_arguments()
@@ -293,6 +299,9 @@ def main():
 	# show all records
 	elif args['action'] == 'show':
 		show_all_records()
+	# sort all records
+	elif args['action'] == 'sort':
+		sort_records(df)
 	# delete one record
 	elif args['action'] == 'delete':
 		delete_record(df, args['name'], args['index'])

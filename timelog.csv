@@ -1,6 +1,7 @@
 Start Time,End Time,Open/Closed,Task,Duration
-2021-07-19 09:30:00,2021-07-19 11:30:00,Closed,Goodway Group,2.0
-2021-07-19 12:15:00,2021-07-19 15:24:00,Closed,TimeTracker,3.25
-2021-07-19 09:00:00,2021-07-19 09:30:00,Closed,Emails/Organizing Week,0.5
-2021-07-19 11:30:00,2021-07-19 12:15:00,Closed,SQL Challenges,0.75
-2021-07-19 15:30:00,,Open,Reviewing SQL training,
+2021-07-27 10:15:00,2021-07-27 11:15:00,Closed,Helping Jimmy w/ SQL,1.0
+2021-07-27 11:15:00,2021-07-27 11:30:00,Closed,Internal Comms on a bunch of tasks,0.25
+2021-07-27 11:30:00,2021-07-27 12:00:00,Closed,IBOTTA Studying,0.5
+2021-07-27 12:00:00,2021-07-27 12:30:00,Closed,GEICO Weekly Sync,0.5
+2021-07-27 12:30:00,2021-07-27 13:51:00,Closed,GEICO,1.5
+2021-07-27 13:52:00,2021-07-27 14:07:00,Closed,Quick Time Tracker fix,0.25
